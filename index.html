@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <meta name="description" content="Past Advertisements." /><meta name="adwords, Facebook Ads" content="Websites, Graphics, Google Adwords" />
 </head>
 <body>
@@ -21,9 +22,9 @@ Home
 	</a>
 </div>
 <div class="selection">
-	<a href="https://ltang909.github.io/aboutme/">
+<a href="https://ltang909.github.io/aboutme/">
 About Me
-	</a>
+</a>
 </div>
 <div class="selection">
 <a href="https://ltang909.github.io/Advertising/">
@@ -143,9 +144,7 @@ Home
 	</a>
 </div>
 <div class="btmselection">
-	<a href="https://ltang909.github.io/aboutme/">
 About Me
-	</a>
 </div>
 <div class="btmselection">
 <a href="https://ltang909.github.io/Advertising/">
@@ -173,7 +172,7 @@ Email Me
 </a>
 <br/>
 <br/>
-&#x24B8; &nbsp; copyright 2017 Leon Tang Designs 
+&#x24B8; &nbsp; copyright 2018 Leon Tang Designs 
 <br/>
 <br/>
 </center>
@@ -363,7 +362,7 @@ text-decoration: none !important;
     position: fixed;
     display: inline-block;
     float: right !important;
-    width: 95%;
+    width: 100%;
 }
 
 .selection {
@@ -433,7 +432,7 @@ font-size: 1em;
 }
 
 .logo{
-width: 12%;
+width: 8%;
 float: left;
 position: fixed;
 }
@@ -524,5 +523,19 @@ function showHide(shID) {
 	}
 }
 </script>
+
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 300) {
+	    $(".top").css("background" , "rgba(0, 0, 0, 0.5)");
+	  }
+	  else{
+		  $(".top").css("background" , "rgba(0, 0, 0, 0)");  	
+	  }
+  })
+})
+      </script>
 
 </html
